@@ -2,3 +2,27 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+body{
+  background-color: #f4f4f4;
+}
+
+.form{
+  margin: auto;
+  width: 400px;
+}
+h1{
+  text-align: center;
+}
+.add-a-worker{
+  margin: auto;
+  display: block;
+  width: 190px;
+}
+table{
+  margin: auto;
+  margin-top: 20px;
+  td, th{
+    padding-left: 30px;
+    text-align: center;
+  }
+}

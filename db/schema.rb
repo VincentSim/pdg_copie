@@ -10,9 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20161227181014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "shifts", force: :cascade do |t|
+    t.integer  "planning_id"
+    t.integer  "worker_id"
+    t.date     "start_date"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["worker_id"], name: "index_shifts_on_worker_id", using: :btree
+  end
+
+  create_table "workers", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "shifts", "workers"
 end

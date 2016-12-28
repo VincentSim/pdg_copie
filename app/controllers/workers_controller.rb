@@ -5,6 +5,7 @@ class WorkersController < ApplicationController
   # GET /workers.json
   def index
     @workers = Worker.all
+    @shifts = Shift.all
   end
 
   # GET /workers/1
