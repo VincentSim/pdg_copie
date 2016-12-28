@@ -25,9 +25,9 @@ SHIFTS = [
   { "planning_id": 1, "user_name": "Lea", "start_date": "2017-1-9" },
   { "planning_id": 1, "user_name": "Marc", "start_date": "2017-1-10" }
 ]
-# WORKERS.each do |params|
-#   Worker.create!(params)
-# end
+WORKERS.each do |params|
+  Worker.create!(params)
+end
 SHIFTS.each do |params|
   worker = Worker.find_by(first_name: params[:user_name])
   Shift.create!({start_date: params[:start_date], worker: worker})
