@@ -5,7 +5,7 @@
 
 // General style
 $font-family-sans-serif:  $base-font;
-$body-bg:                 white;
+$body-bg:                 #f4f4f4;
 $font-size-base:          $base-size;
 $line-height-base:        $base-height;
 $headings-font-family:    $header-font;
@@ -13,11 +13,14 @@ $headings-font-family:    $header-font;
 // Semantic color scheme
 // => http://getbootstrap.com/customize/#colors
 $gray-base:       $gray;
+$pdg-blue-light:  #3BB5E0;
 $brand-primary:   $blue;
-$brand-success:   $green;
+$brand-success:   $pdg-blue-light;
 $brand-info:      $yellow;
 $brand-danger:    $red;
 $brand-warning:   $orange;
+$pdg-blue:        #3C4C5C;
+
 
 // Buttons / inputs radius
 $border-radius-base:  2px;
