@@ -1,13 +1,27 @@
 <p id="notice"><%= notice %></p>
+<div class="spacer">
 
-<p>
+</div>
+<p class="caracteristics_worker">
   <strong>First name:</strong>
   <%= @worker.first_name %>
 </p>
 
-<p>
+<p class="caracteristics_worker">
   <strong>Status:</strong>
   <%= @worker.status %>
+</p>
+<p class="caracteristics_worker">
+  <strong>Price base</strong>
+  <%= @worker.base_price %> €
+</p>
+<p class="caracteristics_worker">
+  <strong>Number of Shifts:</strong>
+  <%= @worker.shifts_count %>
+</p>
+<p class="caracteristics_worker">
+  <strong>Total Price:</strong>
+  <%= @worker.price %> €
 </p>
 
 <%= link_to 'Edit', edit_worker_path(@worker) %> |
