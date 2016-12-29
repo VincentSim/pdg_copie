@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TODO</title>
+    <title>PDG</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= favicon_link_tag %>
   </head>
   <body>
-    <img src="https://www.planning-de-garde.fr/img/pdg-app-icon-97eceed5.png" alt="planning-de-garde" class="logo">
+    <%= image_tag 'pdg-app-icon', class:"logo", alt:"planning-de-garde" %>
     <div class="container">
       <%= yield %>
     </div>
