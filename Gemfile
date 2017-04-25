@@ -16,6 +16,9 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+
 gem 'rails_12factor', group: :production
 
 group :development, :test do

@@ -4,7 +4,8 @@ class ShiftsController < ApplicationController
   # GET /shifts
   # GET /shifts.json
   def index
-    @shifts = Shift.all
+    # @shifts = Shift.all
+    @shifts = Shift.where(start_date: params[:start]..params[:end])
   end
 
   # GET /shifts/1
@@ -52,6 +53,6 @@ class ShiftsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def shift_params
-      params.require(:shift).permit(:planning_id, :start_date, :worker_id)
+      params.require(:shift).permit(:planning_id, :start_date, :end_date, :title, :worker_id)
     end
 end
